@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #FFCAA6;
+  flex-direction: column;
+}
+#gradient-canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  --gradient-color-1: #a960ee;
+  --gradient-color-2: #ff333d;
+  --gradient-color-3: #90e0ff;
+  --gradient-color-4: #ffcb57;
+  z-index: -1;
+}
+.container {
+  width: 100%;
+  max-width: 250px;
+  padding: 80px;
+  background: #2a2222;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 4px solid transparent;
+  border-radius: 40px;
+}
+.container .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .card img {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+.info{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+.info .name{
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffcaa6;
+}
+.info .CV{
+    opacity: 0.5;
+    margin-top: -7px;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 0.85em;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.social-icon a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  transition: color 0.5s ease;
+}
+.social-icon a:hover {
+  color: #FFCAA6;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 2vh;
+}
+.button .Message{
+    padding: 10px 40px;
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+.button .Message:hover {
+    background: #FFCAA6;
+    color: #000;
+}
+.button .Connect{
+    padding: 10px 40px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+.button .Connect:hover {
+    background: #000;
+    color: #fff;
+}
+.end{
+    font-size: 0.8em;
+    color: #000;
+    opacity: 0.5;
+    text-align: center;
+      position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 10px;
+}
